@@ -31,10 +31,10 @@ function init()
 function pageRetrieved(id, data){
     //print(data);
     var match,match1,match2
-    var re_prev = new RegExp("class=\"previous\"><a href=\"http://poorlydrawnlines.com/comic/([^/]*)/\" rel");
-    var re_next = new RegExp("class=\"next\"><a href=\"http://poorlydrawnlines.com/comic/([^/]*)/\" rel");
+    var re_prev = new RegExp("class=\"previous\"><a href=\"http://www.poorlydrawnlines.com/comic/([^/]*)/\" rel");
+    var re_next = new RegExp("class=\"next\"><a href=\"http://www.poorlydrawnlines.com/comic/([^/]*)/\" rel");
     //var re_now = new RegExp("title=\"([^\/]*)\" src=\"([^\"]*)\" alt=");    //print(re_prev);print(re_next);print(re_now);
-    var re_now = new RegExp("src=\"(http://poorlydrawnlines.com/wp-content/uploads/[^\"]*/[^\"]*/[^\"]*)\"");
+    var re_now = new RegExp("src=\"(http://www.poorlydrawnlines.com/wp-content/uploads/[^\"]*/[^\"]*/[^\"]*)\"");
     match = re_prev.exec(data);
     if (match != null) {
       //print("ww");
